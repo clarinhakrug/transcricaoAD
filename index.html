@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Transcrição de áudio</title>
+</head>
+<body>
+  <header class="h-f">
+    <h1>Transcrição de áudio</h1>
+    <nav class="right-align">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+
+    <div id="contrastOptions">
+      <button  class="btn-c" id="blackAndWhite">
+        <img src="./assets/black-and-white.png" alt="preto e branco">
+      </button>
+      <button class="btn-c" id="highContrast">
+        <img src="./assets/constrast.png" alt="alto contraste">
+      </button>
+    </div>
+    <section class="accordion">
+      <h1>A transcrição de Áudio e a Acessibilidade</h1>
+      <div class="container">
+        <button onclick="toggleVisibility('section1')" class="btn-mostrar">A importância da transcrição de áudio na acessibilidade
+          <span class="material-symbols-outlined">
+          expand_more
+          </span></button>
+        <div id="section1" class="hidden sec">
+          <p>A transcrição de áudio é essencial para garantir a acessibilidade, especialmente
+             para pessoas com deficiência auditiva, permitindo-lhes acesso a informações em 
+             diversos formatos. Isso promove inclusão social, facilita 
+            a compreensão do conteúdo e contribui para uma sociedade mais igualitária. 
+          </p>
+          <p>Fonte: <a href="https://www.nad.org/accessibility/for-all/transcription-services-importance/">https://www.nad.org/accessibility/for-all/transcription-services-importance/</a></p>
+        </div>
+      </div>
+    
+      <div class="container">
+        <button onclick="toggleVisibility('section2')" class="btn-mostrar">Benefícios da transcrição para os cegos
+          <span class="material-symbols-outlined">
+            expand_more
+            </span></button>
+        <div id="section2" class="hidden sec">
+          <p>A transcrição de áudio oferece benefícios importantes para pessoas cegas, 
+            proporcionando acesso a informações por meio de texto convertido para Braille.
+            Essa acessibilidade multifuncional ajuda na navegação digital, facilitando a 
+            compreensão do conteúdo e layout das páginas. Além disso, ao fornecer transcrições
+            de aulas e materiais de estudo, contribui para a melhoria da aprendizagem e 
+            promove a independência e autonomia dessas pessoas. A facilidade de comunicação
+            também é aprimorada, permitindo interações mais precisas e detalhadas. Em suma,
+            a transcrição de áudio desempenha um papel fundamental na inclusão e no acesso equitativo à informação 
+            para indivíduos cegos, promovendo uma sociedade mais acessível e inclusiva.
+          </p>
+        </div>
+      </div>
+    
+      <div class="container">
+        <button onclick="toggleVisibility('section3')" class="btn-mostrar">Softwares de Transcrição que usam IA
+          <span class="material-symbols-outlined">
+            expand_more
+            </span></button>
+        <div id="section3" class="hidden sec">
+          <p>Existem várias ferramentas online que podem ajudar na criação de transcrições de áudio. Algumas das mais importantes são:
+            <p>
+            <strong>Google Cloud Speech-to-Text:</strong> Uma plataforma de transcrição de 
+            áudio que usa reconhecimento de voz e inteligência artificial para 
+            criar transcrições precisas. É fácil de usar e permite colaboração em tempo real.
+            <p>
+            <strong>Amazon Transcribe:</strong> Utiliza IA para transcrever automaticamente 
+            áudio em texto, sendo capaz de reconhecer diversos sotaques e vocabulários.</p>
+            <p>
+              <strong>IBM Watson Speech to Text:</strong> Fornece uma API 
+              que utiliza IA para transcrever áudio em tempo real ou em lote com alta precisão.</p>
+            <p>
+              <strong>Microsoft Azure Speech to Text: </strong> Oferece reconhecimento de fala 
+              em tempo real e em lote, com suporte para diversos idiomas e tipos de áudio.  </p>
+              <p>
+                <strong>Otter.ai:</strong> Utiliza IA para transcrição automática de reuniões, entrevistas e outros tipos 
+                de áudio, além de permitir a edição colaborativa das transcrições.</p>
+
+          </div>
+
+      </div>
+    </section>
+  </main>
+  <button id="startButton">Iniciar Transcrição</button>
+  <div id="transcription"></div>
+
+  <footer class="h-f">
+    <p>Transcrição de Áudio na Acessibilidade - Desenvolvido por: Maria Clara Bueno Krug ©      2024</p>
+  </footer>
+  <script src="./script.js"></script>
+
+</body>
+</html>
